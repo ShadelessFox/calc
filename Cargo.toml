@@ -1,0 +1,11 @@
+[package]
+name = "calc"
+version = "0.1.0"
+authors = ["ShadelessFox <shadelessfox@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
